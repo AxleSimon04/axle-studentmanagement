@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management</title>
+
+    <link rel="stylesheet" href="studman.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Management</h1>
+
+        <!-- Student Input Form -->
+
+        <form id="studentForm">
+
+            <label>Student Name:</label>
+            <input type="text" id="studentName"
+            placeholder="Student Name" required>
+
+            <label>Email:</label>
+            <input type="email" id="studentEmail"
+            placeholder="sample@email.com" required>
+
+            <label>Program:</label>
+
+            <select id="studentProgram" required>
+                <option value="">Select Program</option>
+                <option>BSIS</option>
+                <option>BSIT</option>
+                <option>BSAIS</option>
+            </select>
+
+            <button type="submit" id="submitBtn">
+                Add Student
+            </button>
+
+            <button type="button" id="cancelBtn" hidden>
+                Cancel
+            </button>
+
+        </form>
+
+
+        <!-- Student Records -->
+
+        <p>Actions</p>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Program</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentList">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="studman.js"></script>
+
+</body>
+</html>
